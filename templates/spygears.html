@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3><a href="{{url_for('home') }}">Home</a></h3>
+    <h3>{{title}}</h3>
+    <div>{{subtitle}}</div>
+    <ol>
+        {% for spygear in spygears %}
+        <li>{{ spygear }}</li>
+        {% endfor %}
+    </ol>    
+</body>
+</html>
